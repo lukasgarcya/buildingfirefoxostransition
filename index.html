@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Lista de Compras</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="buildingblocks/style/lists.css"/>        
+        <link rel="stylesheet" href="buildingblocks/style/status.css"/>        
+        <link rel="stylesheet" href="buildingblocks/style/headers.css"/>        
+        <link rel="stylesheet" href="buildingblocks/style/toolbars.css"/>        
+        <link rel="stylesheet" href="buildingblocks/style/input_areas.css"/>
+        <link rel="stylesheet" href="buildingblocks/style/edit_mode.css"/>
+        <link rel="stylesheet" href="buildingblocks/util.css"/>        
+        <link rel="stylesheet" href="buildingblocks/fonts.css"/> 
+        <link rel="stylesheet" href="buildingblocks/transitions.css"/> 
+        <link rel="stylesheet" href="lib/transition/transition.css"/> 
+        <link rel="stylesheet" href="buildingblocks/cross_browser.css"/>
+        <script src="lib/transition/transition.js"></script>
+        <script src="js/control.js"></script>
+    </head>
+    <body>        
+        <section role="region" id="mostrarLista" data-position="current">
+            <header>                
+                <menu type="toolbar">
+                    <button id="adicionarLista"><span class="icon icon-add">Adicionar Lista</span></button>
+                </menu>                
+                <button><span class="icon icon-menu">Menu</span></button>                
+                <h1>Listas de compras</h1>
+            </header>
+            <article>
+            </article>
+        </section>
+        <section role="region" id="editarLista" data-position="right">
+            <header>
+                <button id="cancelar"><span class="icon icon-close">cancelar</span></button>                        
+                <menu type="toolbar">
+                    <button type="button">salvar</button>
+                </menu>                    
+                <h1>Editar Lista</h1>
+            </header>
+            <article>
+                <form>
+                    <p><input type="text" placeholder="Nome da Lista" name="nomeLista" id="nomeLista"/></p>
+                </form>
+            </article>
+        </section>
+    </body>
+</html>
