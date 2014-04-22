@@ -1,0 +1,35 @@
+section[data-position="current"], .current[data-position="right"]{
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;
+}
+
+section[data-position="right"]{
+    position: absolute;
+    left: 100%;
+    top:0;
+}
+
+section[data-position="left"]{
+    position: absolute;
+    left: -100%;
+    top:0;
+}
+
+.right[data-position="current"]{
+    animation: currentToRight 0.4s forwards;
+}
+
+.current[data-position="left"]{
+    animation: leftToCurrent 0.4s forwards;
+}
+
+.left[data-position="current"]{
+    animation: currentToLeft 0.4s forwards;
+}
+
+.current[data-position="right"]{
+    animation: rightToCurrent 0.4s forwards;    
+}
