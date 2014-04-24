@@ -6,4 +6,10 @@ window.onload = function() {
     document.getElementById("cancelar").addEventListener("click",function(){
         transition.changeRegion("mostrarLista");
     });
-}
+    document.getElementById("mostrarDetalhes").addEventListener("click",function(){
+        transition.changeRegion("detalhes");
+    },false);
+    document.getElementById("voltar").addEventListener("click",function(){
+        transition.changeRegion("editarLista");
+    },false);
+};
