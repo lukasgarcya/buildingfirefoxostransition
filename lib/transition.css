@@ -1,4 +1,4 @@
-section[data-position="current"], .current[data-position="right"]{
+section[data-position="current"], .current[data-position="right"],.current[data-position="left"]{
     position: absolute;
     left: 0;
     top:0;
