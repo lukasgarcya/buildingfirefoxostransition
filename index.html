@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Lista de Compras</title>
@@ -17,43 +18,46 @@
         <script src="js/control.js"></script>
     </head>
     <body>        
-        <section role="region" id="mostrarLista" data-position="current">
+        <section role="region" id="pagina1" data-position="current">
             <header>                
                 <menu type="toolbar">
-                    <button id="adicionarLista"><span class="icon icon-add">Adicionar Lista</span></button>
+                    <button id="mostrarPagina2"><span class="icon icon-add">Página 2</span></button>
                 </menu>                
-                <button><span class="icon icon-menu">Menu</span></button>                
-                <h1>Listas de compras</h1>
+                <button><span class="icon icon-menu">Menu</span></button>
+                <h1>Página 1</h1>
             </header>
             <article>
+                <p>Usando a Transição do Building Block</p>
             </article>
         </section>
-        <section role="region" id="editarLista" data-position="right">
+        <section role="region" id="pagina2" data-position="right">
             <header>
-                <button id="cancelar"><span class="icon icon-close">cancelar</span></button>                        
+                <button id="voltarPagina1"><span class="icon icon-back">Página 1</span></button>                        
                 <menu type="toolbar">
-                    <button id="mostrarDetalhes" type="button">salvar</button>
+                    <button id="mostrarPagina3" type="button">Página 3</button>
                 </menu>                    
-                <h1>Editar Lista</h1>
+                <h1>Página 2</h1>
             </header>
             <article>
                 <form>
-                    <p><input type="text" placeholder="Nome da Lista" name="nomeLista" id="nomeLista"/></p>
+                    <p><input type="text" placeholder="Nome" name="nome" id="nome"/></p>
                 </form>
             </article>
         </section>        
-        <section role="region" id="detalhes" data-position="right">
+        <section role="region" id="pagina3" data-position="right">
             <header>
-                <button id="voltar"><span class="icon icon-close">voltar</span></button>                        
+                <button id="voltarPagina2"><span class="icon icon-back">Página 2</span></button>                        
                 <menu type="toolbar">
-                    <button id="done" type="button">done</button>
+                    <button id="mostrarPagina1" type="button">Página 1</button>
                 </menu>                    
-                <h1>Detalhes</h1>
+                
             </header>
-            <article>
-                <form>
-                    <p>Exibir Detalhes</p>
-                </form>
+            <article data-type="list">
+                <header>CSS</header>
+                <ul>
+                    <li>Cada section será posicionada de acordo com o data-position</li>
+                    <li>A velocidade de transição será 0.4s</li>
+                </ul>
             </article>
         </section>        
     </body>
