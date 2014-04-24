@@ -32,7 +32,7 @@
             <header>
                 <button id="cancelar"><span class="icon icon-close">cancelar</span></button>                        
                 <menu type="toolbar">
-                    <button type="button">salvar</button>
+                    <button id="mostrarDetalhes" type="button">salvar</button>
                 </menu>                    
                 <h1>Editar Lista</h1>
             </header>
@@ -41,6 +41,20 @@
                     <p><input type="text" placeholder="Nome da Lista" name="nomeLista" id="nomeLista"/></p>
                 </form>
             </article>
-        </section>
+        </section>        
+        <section role="region" id="detalhes" data-position="right">
+            <header>
+                <button id="voltar"><span class="icon icon-close">voltar</span></button>                        
+                <menu type="toolbar">
+                    <button id="done" type="button">done</button>
+                </menu>                    
+                <h1>Detalhes</h1>
+            </header>
+            <article>
+                <form>
+                    <p>Exibir Detalhes</p>
+                </form>
+            </article>
+        </section>        
     </body>
 </html>
