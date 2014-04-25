@@ -11,3 +11,7 @@
     },false);
 </pre>
 <p>A linha "transition = new Transition();" que inicia a biblioteca. Já a linha "transition.changeRegion("pagina2");" ativa a transição no qual tem de ser informado o id da section que será mostrada.</p>
+<p>BUG:</p>
+<ul>
+    <li>Caso o usuário não aguarde a aniação terminar e já clicar para mudar de tela vai ficar tela uma em cima da outra.</li>
+</ul>

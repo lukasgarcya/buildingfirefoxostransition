@@ -1,21 +1,21 @@
 section[data-position="current"], .current[data-position="right"],.current[data-position="left"]{
-    position: absolute;
-    left: 0;
-    top:0;
+    left: 0;    
     bottom: 0;
     right: 0;
 }
 
-section[data-position="right"]{
-    position: absolute;
-    left: 100%;
+section[role="region"]{
+    width: 100%;
     top:0;
+    position:absolute;
+}
+
+section[data-position="right"]{    
+    left: 100%;        
 }
 
 section[data-position="left"]{
-    position: absolute;
     left: -100%;
-    top:0;
 }
 
 .right[data-position="current"]{

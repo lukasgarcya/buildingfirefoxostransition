@@ -12,7 +12,13 @@ window.onload = function() {
     document.getElementById("voltarPagina2").addEventListener("click",function(){
         transition.changeRegion("pagina2");
     },false);
+    document.getElementById("mostrarPagina4").addEventListener("click",function(){
+        transition.changeRegion("pagina4");
+    },false);
     document.getElementById("mostrarPagina1").addEventListener("click",function(){
         transition.changeRegion("pagina1");
+    },false);
+    document.getElementById("voltarPagina3").addEventListener("click",function(){
+        transition.changeRegion("pagina3");
     },false);
 };
